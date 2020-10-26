@@ -24,21 +24,20 @@ import java.io.Serializable;
 @EntityListeners({AuditingEntityListener.class})
 public class Deal extends GeneratorIdentifierEntity<Long> implements Serializable {
 
-    @NotNull
+
     @Column
+    @NotNull
     private String model;
 
-    @NotNull
+
     @Column
+    @NotNull
     private String make;
 
-    @NotNull
-    @Column
-    private Double price;
 
-    @NotNull
     @Column
-    private Long dealerId;
+    @NotNull
+    private Double price;
 
     @Column
     private DealStatus dealStatus = DealStatus.ACTIVE;

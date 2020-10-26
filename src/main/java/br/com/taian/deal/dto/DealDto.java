@@ -9,6 +9,9 @@ import java.util.Date;
 public class DealDto {
 
     @JsonProperty
+    private Long id;
+
+    @JsonProperty
     private String  make;
 
     @JsonProperty
